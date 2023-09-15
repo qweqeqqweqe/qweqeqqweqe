@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .top_main{
+            width: 100%;
+            height: 150px;
+            /* margin-bottom: 10px; */
+            background-color: bisque; /*지울부분*/
+        }
+        .top_title{
+            background-color: blueviolet;
+            height: 90px;
+            line-height:90px ;
+            text-align: center;
+        }
+        .top_title > h1 {
+            color: white;
+            font-family: "궁서체";
+          
+
+        }
+        .container>h1{
+            height: 50px;
+            line-height: 50px;
+            width: 100%;
+            background-color:bisque ;
+            text-align: center;
+        }
+
+        #top_menu{
+            height: 60px;
+            background-color: aquamarine;
+        }
+        #top_menu li{
+            display:inline-block;
+            line-height: 40px;
+        }
+        #top_menu li>a{
+            display: block;
+            padding: 10px 20px;
+            font-size: 1.3rem;
+        }
+
+        .container{
+            height : 600px;
+            background-color: blue;
+        }
+        .footer{
+            height: 100px;
+            background-color: blueviolet;
+            line-height: 100px;
+            text-align: center;
+        }
+        .footer>h2{
+            color:white;
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin:auto;
+        }
+
+        td{
+            width: 150px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        td:first-child{text-align: center;}
+        
+        td:nth-child(2){width: 450px;}
+
+        td>input, 
+        td>select,
+        td>button {height: 40px;} 
+        tr:nth-child(4) input {height: 13px; margin-right: 5px;}
+
+
+    </style>
+</head>
+<body>
+    
+    <header class="top_main">
+        <div class="top_title">
+            <h1>골프 연습장 회원관리 프로그램</h1>
+        </div>
+        <nav id="top_menu">
+            <ul>
+                <li><a href="teacher_select.html">강사조회</a></li>
+                <li><a href="applyfor.html">수강신청</a></li>
+                <li><a href="#">회원정보조회</a></li>
+                <li><a href="#">강사매출현황</a></li>
+                <li><a href="index.html">홈으로</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+   
+    <div class="container">
+        <h1>수강신청</h1>
+        <table border="1">
+            <form action="" method="post" name="memClass">
+                <tr>
+                    <td>수강월</td>
+                    <td colspan="2">
+                        <input type="text">
+                        2022년 3월 예)202203
+                    </td>
+                </tr>
+                <tr>
+                    <td>회원명</td>
+                    <td>
+                        <select name="name" id="name">
+                            <option value="">회원명</option>
+                        </select>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>회원번호</td>
+                    <td>
+                        <input type="text"> 
+                        예)10001
+                    </td>
+                </tr>
+                <tr>
+                    <td>강의장소</td>
+                    <td>
+                        <input type="radio">서울본원
+                        <input type="radio">성남본원
+                        <input type="radio">대전본원
+                        <input type="radio">부산본원
+                        <input type="radio">대구본원
+                    </td>
+                </tr>
+                <tr>
+                    <td>강의명</td>
+                    <td>
+                        <select name="apply" id="apply">
+                            <option value="">강의신청</option>
+                        </select>
+                    </td>
+                            
+                </tr>
+                <tr>
+                    <td>수강료</td>
+                    <td>
+                        <input type="text">
+                        원
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>수강신청</button>
+                        <button>다시쓰기</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+       
+        
+    </div>
+    <footer class="footer">
+        <h2>HRDKOREA Copyright&copy;</h2>
+    </footer>
+        
+    
+    
+</body>
+</html>

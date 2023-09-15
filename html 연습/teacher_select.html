@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .top_main{
+            width: 100%;
+            height: 150px;
+            /* margin-bottom: 10px; */
+            background-color: bisque; /*지울부분*/
+        }
+        .top_title{
+            background-color: blueviolet;
+            height: 90px;
+            line-height:90px ;
+            text-align: center;
+        }
+        .top_title > h1 {
+            color: white;
+            font-family: "궁서체";
+          
+
+        }
+        .container>h1{
+            height: 50px;
+            line-height: 50px;
+            width: 100%;
+            background-color:bisque ;
+            text-align: center;
+        }
+
+        #top_menu{
+            height: 60px;
+            background-color: aquamarine;
+        }
+        #top_menu li{
+            display:inline-block;
+            line-height: 40px;
+        }
+        #top_menu li>a{
+            display: block;
+            padding: 10px 20px;
+            font-size: 1.3rem;
+        }
+
+        .container{
+            height : 600px;
+            background-color: blue;
+        }
+        .footer{
+            height: 100px;
+            background-color: blueviolet;
+            line-height: 100px;
+            text-align: center;
+        }
+        .footer>h2{
+            color:white;
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin:auto;
+        }
+
+        th, td{
+            width: 110px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        td:last-child{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="top_main">
+        <div class="top_title">
+            <h1>골프 연습장 회원관리 프로그램</h1>
+        </div>
+        <nav id="top_menu">
+            <ul>
+                <li><a href="teacher_select.html">강사조회</a></li>
+                <li><a href="applyfor.html">수강신청</a></li>
+                <li><a href="#">회원정보조회</a></li>
+                <li><a href="#">강사매출현황</a></li>
+                <li><a href="index.html">홈으로</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+   
+    <div class="container">
+        <h1>강사조회</h1>
+        <table border="1">
+            <tr>
+                <th>강사코드</th>
+                <th>강사명</th>
+                <th>강의명</th>
+                <th>수강료</th>
+                <th>강사자격취득일</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>이초급</td>
+                <td>초급반</td>
+                <td>100,000</td>
+                <td>2022년 01월 01일</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>김중급</td>
+                <td>중급반</td>
+                <td>250,000</td>
+                <td>2022년 01월 02일</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>박고급</td>
+                <td>고급반</td>
+                <td>300,000</td>
+                <td>2022년 01월 03일</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>정심화</td>
+                <td>심화반</td>
+                <td>400,000</td>
+                <td>2022년 01월 04일</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">
+        <h2>HRDKOREA Copyright&copy;</h2>
+    </footer>
+        
+    
+    
+</body>
+</html>
